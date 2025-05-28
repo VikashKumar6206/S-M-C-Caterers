@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block Title %}Home{% endblock Title %}
+{% block body %}
+
+<section id="portfolio" class="portfolio section">
+  {% if messages %}
+  <div style="margin-bottom: 20px;">
+    {% for message in messages %}
+    <div
+      style="background-color: #d4edda; color: #155724; padding: 10px; border-radius: 5px; border: 1px solid #c3e6cb; margin-bottom: 10px;">
+      {{ message }}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World's Best Dishes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+     <link href="static/assets/css/index.css" rel="stylesheet">
+  
+  </head>
+
+  <body>
+
+    <section class="dishes-section">
+      <h1 class="section-title">Explore the World’s Best Dishes</h1>
+      <div class="dishes-grid">
+        <!-- Dish 1 -->
+        <div class="dish-card">
+          <img src="static/assets/myimg/pexels-horizon-content-2100060-3762069.jpg" alt="Dish 1">
+          <div class="dish-info">
+            <h3>Pizza</h3>
+            <p>Originating from Italy, this pizza is topped with fresh mozzarella, tomatoes, and basil.</p>
+          </div>
+        </div>
+        <!-- Dish 2 -->
+        <div class="dish-card">
+          <img src="static/assets/myimg/pexels-valeriya-1893562.jpg" alt="Dish 2">
+          <div class="dish-info">
+            <h3>Sushi</h3>
+            <p>A traditional Japanese dish made of vinegared rice, raw fish, and vegetables.</p>
+          </div>
+        </div>
+        <!-- Dish 3 -->
+        <div class="dish-card">
+          <img src="static/assets/myimg/pexels-valeriya-1639557 (1).jpg" alt="Dish 3">
+          <div class="dish-info">
+            <h3>Burger</h3>
+            <p>An iconic American dish consisting of a beef patty in a bun with various toppings.</p>
+          </div>
+        </div>
+        <!-- Dish 4 -->
+        <div class="dish-card">
+          <img src="static/assets/myimg/pexels-anshography-18803177.jpg" alt="Dish 4">
+          <div class="dish-info">
+            <h3>Momos</h3>
+            <p>A Mexican delicacy with seasoned meat, vegetables, and salsa wrapped in a soft tortilla.</p>
+          </div>
+        </div>
+        <!-- Dish 5 -->
+        <div class="dish-card">
+          <img src="static/assets/myimg/pexels-dainiktales-19834446.jpg" alt="Dish 5">
+          <div class="dish-info">
+            <h3>Curry</h3>
+            <p>A fragrant and flavorful dish from India, made with a rich, spiced sauce served over rice.</p>
+          </div>
+        </div>
+        <!-- Dish 6 (and so on until 20) -->
+        <div class="dish-card">
+          <img src="static/assets/myimg/pexels-jeshoots-7401.jpg" alt="Dish 6">
+          <div class="dish-info">
+            <h3>Pasta</h3>
+            <p>A popular Japanese noodle soup with a flavorful broth, meat, and various toppings.</p>
+          </div>
+        </div>
+        <!-- Add more dishes up to 20 -->
+        <!-- Repeat the above dish cards for all 20 dishes... -->
+      </div>
+    </section>
+
+  </body>
+
+  </html>
+
+
+
+  {% endblock body %}
